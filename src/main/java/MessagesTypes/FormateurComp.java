@@ -13,19 +13,18 @@ import java.util.List;
  *
  * @author Maxime
  */
-class SalleComp {
-    String  numeroSalle;
+public class FormateurComp {
+    int idFormateur;
     List<Date> datesOccupees = new ArrayList<Date>();
 
-    public String getNumeroSalle() {
-        return numeroSalle;
+    public int getIdFormateur() {
+        return idFormateur;
     }
 
-    public void setNumeroSalle(String numeroSalle) {
-        this.numeroSalle = numeroSalle;
+    public void setIdFormateur(int idFormateur) {
+        this.idFormateur = idFormateur;
     }
 
-   
     public List<Date> getDatesOccupees() {
         return datesOccupees;
     }
