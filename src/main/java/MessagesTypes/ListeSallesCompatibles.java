@@ -5,10 +5,9 @@
  */
 package MessagesTypes;
 
-import entities.Salle;
+
 import java.io.Serializable;
-import java.util.Date;
-import java.util.HashMap;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -18,24 +17,23 @@ import java.util.List;
 public class ListeSallesCompatibles implements Serializable {
     
     int idInstance;
-    HashMap <Integer, List<Date>> sallesCompatibles = new HashMap <Integer, List<Date>>();
+    List<SalleComp> listeSallesOccupees = new ArrayList<SalleComp>();
 
     public int getIdInstance() {
         return idInstance;
-    }
-
-    public HashMap<Integer, List<Date>> getSallesCompatibles() {
-        return sallesCompatibles;
     }
 
     public void setIdInstance(int idInstance) {
         this.idInstance = idInstance;
     }
 
-    public void setSallesCompatibles(HashMap<Integer, List<Date>> sallesCompatibles) {
-        this.sallesCompatibles = sallesCompatibles;
+    public List<SalleComp> getListeSallesOccupees() {
+        return listeSallesOccupees;
     }
-    
+
+    public void setListeSallesOccupees(List<SalleComp> listeSallesOccupees) {
+        this.listeSallesOccupees = listeSallesOccupees;
+    }
     
     
 }
