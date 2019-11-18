@@ -5,6 +5,7 @@
  */
 package MessagesTypes;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -13,7 +14,7 @@ import java.util.List;
  *
  * @author Maxime
  */
-class SalleComp {
+class SalleComp  implements Serializable{
     String  numeroSalle;
     List<Date> datesOccupees = new ArrayList<Date>();
 

@@ -5,6 +5,7 @@
  */
 package MessagesTypes;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,7 +13,7 @@ import java.util.List;
  *
  * @author Maxime
  */
-public class ListeFormateursCompatibles {
+public class ListeFormateursCompatibles  implements Serializable{
     int idInstance;
     List<FormateurComp> formateursCompatibles = new ArrayList<FormateurComp>();
 
