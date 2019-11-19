@@ -14,7 +14,7 @@ import java.util.List;
  *
  * @author Maxime
  */
-class SalleComp  implements Serializable{
+public class SalleComp  implements Serializable{
     String  numeroSalle;
     List<Date> datesOccupees = new ArrayList<Date>();
 
