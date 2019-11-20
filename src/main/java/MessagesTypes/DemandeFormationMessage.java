@@ -5,11 +5,13 @@
  */
 package MessagesTypes;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Maxime
  */
-public class DemandeFormationMessage {
+public class DemandeFormationMessage implements Serializable {
     
     int nbParticipants;
     int codeEntreprise;
