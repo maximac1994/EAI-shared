@@ -5,18 +5,21 @@
  */
 package MessagesTypes;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Maxime
  */
-public class DemandeFormationMessage {
+public class DemandeFormationMessage implements Serializable {
     
     int nbParticipants;
-    int codeEntreprise;
+    String codeEntreprise;
     String nom;
     String codeFormation;
     int idFormation;
     String libelleFormation;
+    
     public int getNbParticipants() {
         return nbParticipants;
     }
@@ -25,11 +28,11 @@ public class DemandeFormationMessage {
         this.nbParticipants = nbParticipants;
     }
 
-    public int getCodeEntreprise() {
+    public String getCodeEntreprise() {
         return codeEntreprise;
     }
 
-    public void setCodeEntreprise(int codeEntreprise) {
+    public void setCodeEntreprise(String codeEntreprise) {
         this.codeEntreprise = codeEntreprise;
     }
 
