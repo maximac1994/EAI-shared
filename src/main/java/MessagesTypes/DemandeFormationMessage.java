@@ -15,6 +15,7 @@ public class DemandeFormationMessage {
     int codeEntreprise;
     String nom;
     String codeFormation;
+    int idFormation;
     String libelleFormation;
     public int getNbParticipants() {
         return nbParticipants;
@@ -54,6 +55,14 @@ public class DemandeFormationMessage {
 
     public void setLibelleFormation(String libelleFormation) {
         this.libelleFormation = libelleFormation;
+    }
+
+    public int getIdFormation() {
+        return idFormation;
+    }
+
+    public void setIdFormation(int idFormation) {
+        this.idFormation = idFormation;
     }
     
     
