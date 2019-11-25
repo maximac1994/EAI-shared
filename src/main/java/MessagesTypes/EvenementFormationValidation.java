@@ -6,16 +6,17 @@
 package MessagesTypes;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  *
  * @author jerom
  */
-public class EvenementFormationProjet2 extends EvenementFormation {
-
-        
+public class EvenementFormationValidation {
+    
     Date dateDebut;
     int duree;
+    List<String> mails;
 
     public Date getDateDebut() {
         return dateDebut;
@@ -25,6 +26,10 @@ public class EvenementFormationProjet2 extends EvenementFormation {
         return duree;
     }
 
+    public List<String> getMails() {
+        return mails;
+    }
+
     public void setDateDebut(Date dateDebut) {
         this.dateDebut = dateDebut;
     }
@@ -32,10 +37,10 @@ public class EvenementFormationProjet2 extends EvenementFormation {
     public void setDuree(int duree) {
         this.duree = duree;
     }
-    
-    @Override
-    public String toString() {
-        return "EvenementFormationProjet2{" + "dateDebut=" + dateDebut + ", duree=" + duree + '}';
+
+    public void setMails(List<String> mails) {
+        this.mails = mails;
     }
+    
     
 }
