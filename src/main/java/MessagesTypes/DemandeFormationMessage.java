@@ -19,6 +19,8 @@ public class DemandeFormationMessage implements Serializable {
     String codeFormation;
     int idFormation;
     String libelleFormation;
+    int nbMin;
+    int nbMax;
     
     public int getNbParticipants() {
         return nbParticipants;
@@ -66,6 +68,22 @@ public class DemandeFormationMessage implements Serializable {
 
     public void setIdFormation(int idFormation) {
         this.idFormation = idFormation;
+    }
+
+    public int getNbMin() {
+        return nbMin;
+    }
+
+    public void setNbMin(int nbMin) {
+        this.nbMin = nbMin;
+    }
+
+    public int getNbMax() {
+        return nbMax;
+    }
+
+    public void setNbMax(int nbMax) {
+        this.nbMax = nbMax;
     }
     
     
