@@ -5,6 +5,7 @@
  */
 package MessagesTypes;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
@@ -12,7 +13,8 @@ import java.util.List;
  *
  * @author Maxime
  */
-public class EvenementFormationAnnulation extends EvenementFormation{
+public class EvenementFormationAnnulation extends EvenementFormation implements Serializable {
+    
     Date dateDebut;
     int duree;
     List<String> mails;
@@ -40,6 +42,10 @@ public class EvenementFormationAnnulation extends EvenementFormation{
     public void setMails(List<String> mails) {
         this.mails = mails;
     }
-    
+
+    @Override
+    public String toString() {
+        return "EvenementFormationAnnulation{" + "dateDebut=" + dateDebut + ", duree=" + duree + ", mails=" + mails + '}';
+    }
     
 }

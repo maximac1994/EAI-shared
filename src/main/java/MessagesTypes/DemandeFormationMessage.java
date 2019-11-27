@@ -21,6 +21,9 @@ public class DemandeFormationMessage implements Serializable {
     String libelleFormation;
     int nbMin;
     int nbMax;
+    int duree;
+    String thematique;
+    int niveau;
     
     public int getNbParticipants() {
         return nbParticipants;
@@ -86,10 +89,33 @@ public class DemandeFormationMessage implements Serializable {
         this.nbMax = nbMax;
     }
 
+    public int getDuree() {
+        return duree;
+    }
+
+    public void setDuree(int duree) {
+        this.duree = duree;
+    }
+
+    public String getThematique() {
+        return thematique;
+    }
+
+    public void setThematique(String thematique) {
+        this.thematique = thematique;
+    }
+
+    public int getNiveau() {
+        return niveau;
+    }
+
+    public void setNiveau(int niveau) {
+        this.niveau = niveau;
+    }
+
     @Override
     public String toString() {
-        return "DemandeFormationMessage{" + "nbParticipants=" + nbParticipants + ", codeEntreprise=" + codeEntreprise + ", nom=" + nom + ", codeFormation=" + codeFormation + ", idFormation=" + idFormation + ", libelleFormation=" + libelleFormation + ", nbMin=" + nbMin + ", nbMax=" + nbMax + '}';
+        return "DemandeFormationMessage{" + "nbParticipants=" + nbParticipants + ", codeEntreprise=" + codeEntreprise + ", nom=" + nom + ", codeFormation=" + codeFormation + ", idFormation=" + idFormation + ", libelleFormation=" + libelleFormation + ", nbMin=" + nbMin + ", nbMax=" + nbMax + ", duree=" + duree + ", thematique=" + thematique + ", niveau=" + niveau + '}';
     }
-    
     
 }

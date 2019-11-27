@@ -44,6 +44,5 @@ public abstract class EvenementFormation implements Serializable{
     public String toString() {
         return "EvenementFormation{" + "idInstance=" + idInstance + ", idFormateur=" + idFormateur + ", idSalle=" + idSalle + '}';
     }
-    
-    
+   
 }

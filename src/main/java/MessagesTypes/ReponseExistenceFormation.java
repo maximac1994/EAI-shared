@@ -31,5 +31,10 @@ public class ReponseExistenceFormation implements Serializable {
     public void setFormationExists(boolean formationExists) {
         this.formationExists = formationExists;
     }
+
+    @Override
+    public String toString() {
+        return "ReponseExistenceFormation{" + "demandeFormationMessage=" + demandeFormationMessage + ", formationExists=" + formationExists + '}';
+    }
     
 }

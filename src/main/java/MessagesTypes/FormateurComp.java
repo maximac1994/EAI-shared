@@ -15,6 +15,7 @@ import java.util.List;
  * @author Maxime
  */
 public class FormateurComp  implements Serializable{
+    
     int idFormateur;
     List<Date> datesOccupees = new ArrayList<Date>();
 
