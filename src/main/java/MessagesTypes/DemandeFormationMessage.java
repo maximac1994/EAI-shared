@@ -85,6 +85,11 @@ public class DemandeFormationMessage implements Serializable {
     public void setNbMax(int nbMax) {
         this.nbMax = nbMax;
     }
+
+    @Override
+    public String toString() {
+        return "DemandeFormationMessage{" + "nbParticipants=" + nbParticipants + ", codeEntreprise=" + codeEntreprise + ", nom=" + nom + ", codeFormation=" + codeFormation + ", idFormation=" + idFormation + ", libelleFormation=" + libelleFormation + ", nbMin=" + nbMin + ", nbMax=" + nbMax + '}';
+    }
     
     
 }
