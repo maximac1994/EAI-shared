@@ -11,27 +11,7 @@ import java.util.Date;
  *
  * @author jerom
  */
-public class EvenementFormationProjet2 extends EvenementFormation {
-
-        
-    Date dateDebut;
-    int duree;
-
-    public Date getDateDebut() {
-        return dateDebut;
-    }
-
-    public int getDuree() {
-        return duree;
-    }
-
-    public void setDateDebut(Date dateDebut) {
-        this.dateDebut = dateDebut;
-    }
-
-    public void setDuree(int duree) {
-        this.duree = duree;
-    }
+public class EvenementFormationProjet2 extends EvenementFormationChangeEtat {
     
     @Override
     public String toString() {

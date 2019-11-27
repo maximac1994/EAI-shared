@@ -12,30 +12,12 @@ import java.util.List;
  *
  * @author jerom
  */
-public class EvenementFormationValidation {
+public class EvenementFormationValidation extends EvenementFormationChangeEtat {
     
-    Date dateDebut;
-    int duree;
     List<String> mails;
-
-    public Date getDateDebut() {
-        return dateDebut;
-    }
-
-    public int getDuree() {
-        return duree;
-    }
 
     public List<String> getMails() {
         return mails;
-    }
-
-    public void setDateDebut(Date dateDebut) {
-        this.dateDebut = dateDebut;
-    }
-
-    public void setDuree(int duree) {
-        this.duree = duree;
     }
 
     public void setMails(List<String> mails) {
