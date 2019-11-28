@@ -13,6 +13,7 @@ import java.io.Serializable;
  */
 public class EvenementFormationProjet1 extends EvenementFormation {
     int idFormation;
+    int nbMax;
 
     public int getIdFormation() {
         return idFormation;
@@ -22,11 +23,17 @@ public class EvenementFormationProjet1 extends EvenementFormation {
         this.idFormation = idFormation;
     }
 
+    public int getNbMax() {
+        return nbMax;
+    }
+
+    public void setNbMax(int nbMax) {
+        this.nbMax = nbMax;
+    }
+
     @Override
     public String toString() {
-        return super.toString() + "EvenementFormationProjet1{" + "idFormation=" + idFormation + '}';
-    }
-    
-    
+        return super.toString() + "EvenementFormationProjet1{" + "idFormation=" + idFormation + ", nbMax=" + nbMax + '}';
+    }    
     
 }

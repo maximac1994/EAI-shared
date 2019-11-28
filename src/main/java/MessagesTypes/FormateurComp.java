@@ -34,5 +34,10 @@ public class FormateurComp  implements Serializable{
     public void setDatesOccupees(List<Date> datesOccupees) {
         this.datesOccupees = datesOccupees;
     }
+
+    @Override
+    public String toString() {
+        return "FormateurComp{" + "idFormateur=" + idFormateur + ", datesOccupees=" + datesOccupees + '}';
+    }
     
 }

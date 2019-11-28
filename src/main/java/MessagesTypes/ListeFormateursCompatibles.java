@@ -32,6 +32,10 @@ public class ListeFormateursCompatibles  implements Serializable{
     public void setFormateursCompatibles(List<FormateurComp> formateursCompatibles) {
         this.formateursCompatibles = formateursCompatibles;
     }
-    
+
+    @Override
+    public String toString() {
+        return "ListeFormateursCompatibles{" + "idInstance=" + idInstance + ", formateursCompatibles=" + formateursCompatibles + '}';
+    }
     
 }

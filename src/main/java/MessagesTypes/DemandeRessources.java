@@ -66,6 +66,10 @@ public class DemandeRessources implements Serializable {
     public void setNbMax(int nbMax) {
         this.nbMax = nbMax;
     }
-    
-    
+
+    @Override
+    public String toString() {
+        return "DemandeRessources{" + "idInstance=" + idInstance + ", idFormation=" + idFormation + ", equipementsNecessaires=" + equipementsNecessaires + ", competencesNecessaires=" + competencesNecessaires + ", nbMax=" + nbMax + '}';
+    }
+  
 }

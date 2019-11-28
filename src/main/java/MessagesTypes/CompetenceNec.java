@@ -30,6 +30,10 @@ public class CompetenceNec implements Serializable{
     public void setNiveau(int niveau) {
         this.niveau = niveau;
     }
-    
+
+    @Override
+    public String toString() {
+        return "CompetenceNec{" + "idCompetence=" + idCompetence + ", niveau=" + niveau + '}';
+    }
     
 }
