@@ -13,7 +13,7 @@ import java.util.List;
  *
  * @author Maxime
  */
-public class EvenementFormationAnnulation extends EvenementFormation implements Serializable {
+public class EvenementFormationAnnulation extends EvenementFormation {
     
     Date dateDebut;
     int duree;

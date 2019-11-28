@@ -11,7 +11,7 @@ import java.io.Serializable;
  *
  * @author Maxime
  */
-public abstract class EvenementFormation implements Serializable{
+public abstract class EvenementFormation implements Serializable {
     int idInstance;
     int idFormateur;
     String idSalle;

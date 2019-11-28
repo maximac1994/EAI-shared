@@ -5,6 +5,8 @@
  */
 package MessagesTypes;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Maxime
@@ -19,5 +21,12 @@ public class EvenementFormationProjet1 extends EvenementFormation {
     public void setIdFormation(int idFormation) {
         this.idFormation = idFormation;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "EvenementFormationProjet1{" + "idFormation=" + idFormation + '}';
+    }
+    
+    
     
 }
