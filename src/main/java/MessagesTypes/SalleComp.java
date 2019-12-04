@@ -34,5 +34,10 @@ public class SalleComp  implements Serializable{
     public void setDatesOccupees(List<Date> datesOccupees) {
         this.datesOccupees = datesOccupees;
     }
+
+    @Override
+    public String toString() {
+        return "SalleComp{" + "numeroSalle=" + numeroSalle + ", datesOccupees=" + datesOccupees + '}';
+    }
     
 }

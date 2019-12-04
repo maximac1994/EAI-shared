@@ -15,6 +15,7 @@ import java.util.List;
  */
 public class ListeFormateursCompatibles  implements Serializable{
     int idInstance;
+    int duree;
     List<FormateurComp> formateursCompatibles = new ArrayList<FormateurComp>();
 
     public int getIdInstance() {
@@ -36,6 +37,14 @@ public class ListeFormateursCompatibles  implements Serializable{
     @Override
     public String toString() {
         return "ListeFormateursCompatibles{" + "idInstance=" + idInstance + ", formateursCompatibles=" + formateursCompatibles + '}';
+    }
+
+    public int getDuree() {
+        return duree;
+    }
+
+    public void setDuree(int duree) {
+        this.duree = duree;
     }
     
 }

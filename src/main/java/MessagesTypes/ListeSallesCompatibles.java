@@ -17,6 +17,7 @@ import java.util.List;
 public class ListeSallesCompatibles implements Serializable {
     
     int idInstance;
+    int duree;
     List<SalleComp> listeSallesComp = new ArrayList<SalleComp>();
 
     public int getIdInstance() {
@@ -33,6 +34,19 @@ public class ListeSallesCompatibles implements Serializable {
 
     public void setListeSallesComp(List<SalleComp> listeSallesComp) {
         this.listeSallesComp = listeSallesComp;
+    }
+
+    public int getDuree() {
+        return duree;
+    }
+
+    public void setDuree(int duree) {
+        this.duree = duree;
+    }
+
+    @Override
+    public String toString() {
+        return "ListeSallesCompatibles{" + "idInstance=" + idInstance + ", duree=" + duree + ", listeSallesComp=" + listeSallesComp + '}';
     }
     
     
